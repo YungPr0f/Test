@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+    
+    <link rel="stylesheet" href="res/bootstrap@5.0.0-alpha2.min.css">
+    <link rel="stylesheet" href="res/chartist.min.css">
+    <style>
+      .center-cropped {
+        object-fit: cover; /* Do not scale the image */
+        object-position: center; /* Center the image within the element */
+        // height: 100px;
+        // width: 100px;
+        width: 100%;
+        height: 100px;
+      }
+      
+      .bg-purple {
+        background-color: purple;
+      }
+      
+      .center-filled {
+        object-fit: fill;
+        object-position: center;
+        width: 100%;
+        height: 100px;
+      }
+      
+      .center-contained {
+        object-fit: contain;
+        object-position: center;
+        width:100%;
+        height: 100px;
+      }
+    </style>
+</head>
+
+<body>
+  <div class="container pt-5">
+    
+    <h2 class="text-center font-weight-bold mb-4">Original Image</h2>
+    <div class="row">
+      <div class="col-md-4">
+        <img class="img-fluid border border-primary" src="img/photo01.jpeg" alt="" />
+      </div>
+      <div class="col-md-4">
+        <img class="img-fluid border border-primary" src="img/photo02.jpeg" alt="" />
+      </div>
+      <div class="col-md-4">
+        <img class="img-fluid border border-primary" src="img/photo03.jpeg" alt="" />
+      </div>
+    </div>
+    
+    <hr class="my-5"/>
+    
+    <h2 class="text-center font-weight-bold mb-4 mt-5">Edited Image - v1</h2>
+    <div class="row">
+      <div class="col-md-4">
+        <img class="center-cropped border border-primary" src="img/photo01.jpeg" alt="" />
+      </div>
+      <div class="col-md-4">
+        <img class="center-cropped border border-primary" src="img/photo02.jpeg" alt="" />
+      </div>
+      <div class="col-md-4">
+        <img class="center-cropped border border-primary" src="img/photo03.jpeg" alt="" />
+      </div>
+    </div>
+    
+    
+    
+    <hr class="my-5"/>
+    
+    <h2 class="text-center font-weight-bold mb-4 mt-5">Edited Image - v2</h2>
+    <div class="row">
+      <div class="col-md-4">
+        <img class="center-filled border border-primary" src="img/photo01.jpeg" alt="" />
+      </div>
+      <div class="col-md-4">
+        <img class="center-filled border border-primary" src="img/photo02.jpeg" alt="" />
+      </div>
+      <div class="col-md-4">
+        <img class="center-filled border border-primary" src="img/photo03.jpeg" alt="" />
+      </div>
+    </div>
+    
+    
+    
+    <hr class="my-5"/>
+    
+    <h2 class="text-center font-weight-bold mb-4 mt-5">Edited Image - v3</h2>
+    <div class="row">
+      <div class="col-md-4">
+        <img class="center-contained border border-primary" src="img/photo01.jpeg" alt="" />
+      </div>
+      <div class="col-md-4">
+        <img class="center-contained border border-primary" src="img/photo02.jpeg" alt="" />
+      </div>
+      <div class="col-md-4">
+        <img class="center-contained border border-primary" src="img/photo03.jpeg" alt="" />
+      </div>
+    </div>
+    
+    
+  </div>
+</body>
+
+</html>
